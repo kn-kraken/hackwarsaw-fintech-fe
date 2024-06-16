@@ -1,13 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FinTech Frontend - React tailwindcss and many more
 
-## Getting Started
+##
 
-First, run the development server:
+## Running application
+
+Firstly, download all dependencies:
 
 ```bash
 npm i
 ```
 
+Create a `.env.local` file and populate it according to the guidelines provided in the `.env.local.example` file.
+
+Then you can run the project in development mode or build it for production.
+
+Running dev server:
+
 ```bash
 npm run dev
+```
+
+Building the project:
+
+```bash
+npm run build
 ```
