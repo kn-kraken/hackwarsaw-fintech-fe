@@ -9,7 +9,7 @@ export default function Nav() {
           <Logo />
         </div>
         <h1 className="pl-2 text-2xl font-bold">
-          Fi
+          Fin
           <span className={`${ptSerif.className}`}>
             <span className="text-green-900">T</span>ech
           </span>
