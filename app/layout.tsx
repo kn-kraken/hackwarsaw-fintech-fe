@@ -14,8 +14,8 @@ const inter = Inter({ subsets: ["latin"] });
 const nano = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Right Road",
-  description: "Find the right road for you",
+  title: "FinTech",
+  description: "Find the right place for you",
 };
 
 export default function RootLayout({

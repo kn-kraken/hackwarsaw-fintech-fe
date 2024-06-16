@@ -25,6 +25,17 @@ export default function UserCard() {
   });
 
   const onSearch = () => {
+    if (!location) {
+      alert("Please select location, by clicking on the map");
+      return;
+    }
+    if (!category) {
+      alert(
+        "Please select category, in which algorithm will calculate the best place for you",
+      );
+      return;
+    }
+
     query.refetch();
   };
 

@@ -270,7 +270,7 @@ function LocationMarker() {
       }}
       icon={personIcon}
     >
-      <Popup>You are here</Popup>
+      <Popup>Your ideal localization</Popup>
     </Marker>
   );
 }
