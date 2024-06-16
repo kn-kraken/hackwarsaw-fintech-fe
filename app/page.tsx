@@ -1,10 +1,12 @@
 import Image from "next/image";
-import MapFC from "@/components/map/map-fc";
-import UserOverlay from "@/components/user-overlay";
 import UserCard from "@/components/user-card";
 import { CoordinatesList } from "@/lib/types";
 import RangeSlider from "@/components/range-slider";
 import Rand from "rand-seed";
+import dynamic from "next/dynamic";
+const MapFC = dynamic(() => import("../components/map/map-fc"), {
+  ssr: false,
+});
 
 const SEED = "123123";
 
