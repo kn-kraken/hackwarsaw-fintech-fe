@@ -206,7 +206,7 @@ export default function MapFC({ regions }: Props) {
               position={{ lat, lng }}
               icon={createNumberedIcon(index + 1)}
             >
-              <Popup>Working business - {rel.address}</Popup>
+              <Popup>Location - {rel.address}</Popup>
             </Marker>
           );
         })}
@@ -221,7 +221,7 @@ export default function MapFC({ regions }: Props) {
               icon={ICONS_MAP[busines.type as Places]}
             >
               <Popup>
-                {busines.name} - {busines.address} - {busines.type}
+                {busines.name} - {busines.address}
               </Popup>
             </Marker>
           );
