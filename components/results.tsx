@@ -44,7 +44,11 @@ export default function Results({ query }: Props) {
   }
 
   if (isError) {
-    return <Root>Error</Root>;
+    return (
+      <Root className="grid place-items-center text-xl text-red-700">
+        Error: try again
+      </Root>
+    );
   }
 
   if (isLoading) {
