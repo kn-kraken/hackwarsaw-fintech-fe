@@ -1,5 +1,6 @@
 import { ptSerif } from "@/lib/fonts";
 import FocusBtn from "./focus-btn";
+import ChatBtn from "./chat-btn";
 
 export default function Nav() {
   return (
@@ -19,6 +20,9 @@ export default function Nav() {
         <ul className="flex space-x-4">
           <li>
             <FocusBtn />
+          </li>
+          <li>
+            <ChatBtn />
           </li>
         </ul>
       </nav>
