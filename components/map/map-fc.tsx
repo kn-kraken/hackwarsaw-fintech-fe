@@ -185,6 +185,7 @@ export default function MapFC({ regions }: Props) {
   const markerRef = useRef<any>(null);
   const [position, setPosition] = useState<null | L.LatLngExpression>(null);
   const [realEstates, setRealEstates] = useRealEstates();
+
   const [businesses, setBusinesses] = useBusinesses();
 
   return (

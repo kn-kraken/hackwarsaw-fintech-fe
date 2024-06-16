@@ -1,3 +1,4 @@
+import { MOCKS_TEMP } from "./globals";
 import {
   BusinessDir,
   BusinessDirDB,
@@ -24,7 +25,7 @@ export async function fetcher<T>(url: string): Promise<T> {
   return data;
 }
 
-export async function getBusinessDir(
+/* export async function getBusinessDir(
   localization: Point,
   category: string,
   range: number,
@@ -36,6 +37,16 @@ export async function getBusinessDir(
   url.searchParams.append("range", range.toString());
 
   const res = (await (await fetch(url.toString())).json()) as BusinessDir;
+  console.log(res);
 
   return { businesses: res.businesses, real_estates: res.real_estates };
+}
+ */
+
+export const delay = (ms: number) =>
+  new Promise((resolve) => setTimeout(resolve, ms));
+
+export async function getBusinessDir(): Promise<BusinessDirDB> {
+  await delay(1000);
+  return MOCKS_TEMP as any;
 }

@@ -4,6 +4,7 @@ import { CoordinatesList } from "@/lib/types";
 import RangeSlider from "@/components/range-slider";
 import Rand from "rand-seed";
 import dynamic from "next/dynamic";
+import { MOCKS_REGIONS } from "@/lib/globals";
 const MapFC = dynamic(() => import("../components/map/map-fc"), {
   ssr: false,
 });
@@ -35,7 +36,7 @@ export default async function Home() {
 
   return (
     <main className="relative flex-1 grid-cols-4">
-      <MapFC regions={newRegions} />
+      <MapFC regions={MOCKS_REGIONS as any} />
       <UserCard />
       <RangeSlider />
     </main>
